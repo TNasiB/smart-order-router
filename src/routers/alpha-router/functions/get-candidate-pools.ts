@@ -4,13 +4,14 @@ import { FeeAmount } from '@atleta-chain/v3-sdk';
 import _ from 'lodash';
 
 import {
+  // DAI_OPTIMISM_SEPOLIA,
   ITokenListProvider,
   IV2SubgraphProvider,
   USDC_ARBITRUM_SEPOLIA,
-  USDC_OPTIMISM_SEPOLIA,
-  USDT_OPTIMISM_SEPOLIA,
+  // USDC_OPTIMISM_SEPOLIA,
+  // USDT_OPTIMISM_SEPOLIA,
   V2SubgraphPool,
-  WBTC_OPTIMISM_SEPOLIA,
+  // WBTC_OPTIMISM_SEPOLIA,
 } from '../../../providers';
 import {
   CELO,
@@ -153,11 +154,12 @@ const baseTokensByChain: { [chainId in ChainId]?: Token[] } = {
     USDT_OPTIMISM_GOERLI,
     WBTC_OPTIMISM_GOERLI,
   ],
-  [ChainId.OPTIMISM_SEPOLIA]: [
-    USDC_OPTIMISM_SEPOLIA,
-    USDT_OPTIMISM_SEPOLIA,
-    WBTC_OPTIMISM_SEPOLIA,
-  ],
+  // [ChainId.OPTIMISM_SEPOLIA]: [
+  //   DAI_OPTIMISM_SEPOLIA,
+  //   USDC_OPTIMISM_SEPOLIA,
+  //   USDT_OPTIMISM_SEPOLIA,
+  //   WBTC_OPTIMISM_SEPOLIA,
+  // ],
   [ChainId.ARBITRUM_ONE]: [
     DAI_ARBITRUM,
     USDC_ARBITRUM,
