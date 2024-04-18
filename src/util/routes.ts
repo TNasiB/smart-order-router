@@ -1,7 +1,7 @@
-import { Protocol } from '@uniswap/router-sdk';
-import { Percent } from '@uniswap/sdk-core';
-import { Pair } from '@uniswap/v2-sdk';
-import { Pool } from '@uniswap/v3-sdk';
+import { Protocol } from '@atleta-chain/router-sdk';
+import { Percent } from '@atleta-chain/sdk-core';
+import { Pair } from '@atleta-chain/v2-sdk';
+import { Pool } from '@atleta-chain/v3-sdk';
 import _ from 'lodash';
 
 import { RouteWithValidQuote } from '../routers/alpha-router';

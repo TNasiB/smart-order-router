@@ -1,6 +1,6 @@
+import { ChainId } from '@atleta-chain/sdk-core';
 import { BigNumber } from '@ethersproject/bignumber';
 import { BaseProvider } from '@ethersproject/providers';
-import { ChainId } from '@uniswap/sdk-core';
 
 import { TokenFeeDetector__factory } from '../types/other/factories/TokenFeeDetector__factory';
 import { TokenFeeDetector } from '../types/other/TokenFeeDetector';

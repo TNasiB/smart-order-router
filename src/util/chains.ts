@@ -4,7 +4,7 @@ import {
   Ether,
   NativeCurrency,
   Token,
-} from '@uniswap/sdk-core';
+} from '@atleta-chain/sdk-core';
 
 // WIP: Gnosis, Moonbeam
 export const SUPPORTED_CHAINS: ChainId[] = [

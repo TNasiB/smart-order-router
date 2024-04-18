@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { ChainId, Token } from '@uniswap/sdk-core';
+import { ChainId, Token } from '@atleta-chain/sdk-core';
 
 import {
   BTC_BNB,
@@ -7,7 +7,8 @@ import {
   DAI_AVAX,
   DAI_BNB,
   DAI_MAINNET,
-  ITokenProvider, USDB_BLAST,
+  ITokenProvider,
+  USDB_BLAST,
   USDC_AVAX,
   USDC_BASE,
   USDC_BNB,
@@ -16,7 +17,7 @@ import {
   USDT_MAINNET,
   WBTC_MAINNET,
   WMATIC_POLYGON,
-  WMATIC_POLYGON_MUMBAI
+  WMATIC_POLYGON_MUMBAI,
 } from '../../providers/token-provider';
 import { WRAPPED_NATIVE_CURRENCY } from '../../util/chains';
 

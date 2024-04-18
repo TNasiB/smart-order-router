@@ -1,7 +1,7 @@
+import { ChainId, Token } from '@atleta-chain/sdk-core';
 import { Interface } from '@ethersproject/abi';
 import { BigNumber } from '@ethersproject/bignumber';
 import { parseBytes32String } from '@ethersproject/strings';
-import { ChainId, Token } from '@uniswap/sdk-core';
 import _ from 'lodash';
 
 import { IERC20Metadata__factory } from '../types/v3/factories/IERC20Metadata__factory';
@@ -654,7 +654,7 @@ export const USDB_BLAST = new Token(
   18,
   'USDB',
   'USD Blast'
-)
+);
 
 export class TokenProvider implements ITokenProvider {
   constructor(

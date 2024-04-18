@@ -1,6 +1,6 @@
+import { ChainId, Price } from '@atleta-chain/sdk-core';
+import { Pool } from '@atleta-chain/v3-sdk';
 import { BigNumber } from '@ethersproject/bignumber';
-import { ChainId, Price } from '@uniswap/sdk-core';
-import { Pool } from '@uniswap/v3-sdk';
 import _ from 'lodash';
 
 import { WRAPPED_NATIVE_CURRENCY } from '../../../..';
@@ -16,6 +16,7 @@ import {
   IOnChainGasModelFactory,
 } from '../gas-model';
 
+import { BaseProvider } from '@ethersproject/providers';
 import {
   BASE_SWAP_COST,
   COST_PER_HOP,
@@ -24,7 +25,6 @@ import {
   SINGLE_HOP_OVERHEAD,
   TOKEN_OVERHEAD,
 } from './gas-costs';
-import { BaseProvider } from '@ethersproject/providers';
 
 /**
  * Computes a gas estimate for a V3 swap using heuristics.

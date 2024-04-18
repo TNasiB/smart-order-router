@@ -1,5 +1,5 @@
-import { ChainId, Token } from '@uniswap/sdk-core';
-import { Pair } from '@uniswap/v2-sdk';
+import { ChainId, Token } from '@atleta-chain/sdk-core';
+import { Pair } from '@atleta-chain/v2-sdk';
 import _ from 'lodash';
 
 import { log } from '../../util/log';

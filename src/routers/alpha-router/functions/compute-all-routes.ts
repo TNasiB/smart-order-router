@@ -1,6 +1,6 @@
-import { Token } from '@uniswap/sdk-core';
-import { Pair } from '@uniswap/v2-sdk';
-import { Pool } from '@uniswap/v3-sdk';
+import { Token } from '@atleta-chain/sdk-core';
+import { Pair } from '@atleta-chain/v2-sdk';
+import { Pool } from '@atleta-chain/v3-sdk';
 
 import { log } from '../../../util/log';
 import { poolToString, routeToString } from '../../../util/routes';

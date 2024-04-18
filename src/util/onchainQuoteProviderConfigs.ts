@@ -1,10 +1,10 @@
-import { ChainId } from '@uniswap/sdk-core';
+import { ChainId } from '@atleta-chain/sdk-core';
 
 import {
   BatchParams,
   BlockNumberConfig,
   FailureOverrides,
-  QuoteRetryOptions
+  QuoteRetryOptions,
 } from '../providers';
 
 export const NETWORKS_WITH_SAME_RETRY_OPTIONS = [ChainId.POLYGON];
@@ -104,8 +104,7 @@ export function constructSameSuccessRateFailureOverridesMap<
   }, {});
 }
 
-export const DEFAULT_SUCCESS_RATE_FAILURE_OVERRIDES: FailureOverrides =
-{
+export const DEFAULT_SUCCESS_RATE_FAILURE_OVERRIDES: FailureOverrides = {
   gasLimitOverride: 1_300_000,
   multicallChunk: 110,
 };
@@ -138,7 +137,5 @@ export const DEFAULT_BLOCK_NUMBER_CONFIGS: BlockNumberConfig = {
 };
 
 export const BLOCK_NUMBER_CONFIGS = {
-  ...constructSameBlockNumberConfigsMap(
-    DEFAULT_BLOCK_NUMBER_CONFIGS
-  ),
+  ...constructSameBlockNumberConfigsMap(DEFAULT_BLOCK_NUMBER_CONFIGS),
 };

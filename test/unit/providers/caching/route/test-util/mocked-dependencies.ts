@@ -1,6 +1,6 @@
+import { Protocol } from '@atleta-chain/router-sdk';
+import { ChainId, TradeType } from '@atleta-chain/sdk-core';
 import { BigNumber } from '@ethersproject/bignumber';
-import { Protocol } from '@uniswap/router-sdk';
-import { ChainId, TradeType } from '@uniswap/sdk-core';
 import {
   DAI_MAINNET,
   USDC_MAINNET,

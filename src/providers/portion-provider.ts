@@ -1,6 +1,6 @@
+import { ZERO } from '@atleta-chain/router-sdk';
+import { Fraction, TradeType } from '@atleta-chain/sdk-core';
 import { BigNumber } from '@ethersproject/bignumber';
-import { ZERO } from '@uniswap/router-sdk';
-import { Fraction, TradeType } from '@uniswap/sdk-core';
 
 import {
   RouteWithValidQuote,

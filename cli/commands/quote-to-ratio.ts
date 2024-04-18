@@ -1,7 +1,7 @@
+import { Currency, Ether, Fraction, Percent } from '@atleta-chain/sdk-core';
+import { Position } from '@atleta-chain/v3-sdk';
 import { Logger } from '@ethersproject/logger';
 import { flags } from '@oclif/command';
-import { Currency, Ether, Fraction, Percent } from '@uniswap/sdk-core';
-import { Position } from '@uniswap/v3-sdk';
 import dotenv from 'dotenv';
 import {
   ID_TO_CHAIN_ID,

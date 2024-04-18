@@ -1,6 +1,6 @@
-import { Protocol } from '@uniswap/router-sdk';
-import { ChainId, Token, TradeType } from '@uniswap/sdk-core';
-import { FeeAmount } from '@uniswap/v3-sdk';
+import { Protocol } from '@atleta-chain/router-sdk';
+import { ChainId, Token, TradeType } from '@atleta-chain/sdk-core';
+import { FeeAmount } from '@atleta-chain/v3-sdk';
 import _ from 'lodash';
 
 import {
@@ -11,7 +11,7 @@ import {
   USDC_OPTIMISM_SEPOLIA,
   USDT_OPTIMISM_SEPOLIA,
   V2SubgraphPool,
-  WBTC_OPTIMISM_SEPOLIA
+  WBTC_OPTIMISM_SEPOLIA,
 } from '../../../providers';
 import {
   CELO,

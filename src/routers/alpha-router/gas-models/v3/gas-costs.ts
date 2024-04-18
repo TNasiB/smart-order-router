@@ -1,5 +1,5 @@
+import { ChainId, Currency, Token } from '@atleta-chain/sdk-core';
 import { BigNumber } from '@ethersproject/bignumber';
-import { ChainId, Currency, Token } from '@uniswap/sdk-core';
 
 import { AAVE_MAINNET, LIDO_MAINNET } from '../../../../providers';
 import { V3Route } from '../../../router';

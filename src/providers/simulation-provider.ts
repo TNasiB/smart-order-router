@@ -1,13 +1,13 @@
+import { ChainId, TradeType } from '@atleta-chain/sdk-core';
+import { PERMIT2_ADDRESS } from '@atleta-chain/universal-router-sdk';
 import { JsonRpcProvider } from '@ethersproject/providers';
-import { ChainId, TradeType } from '@uniswap/sdk-core';
-import { PERMIT2_ADDRESS } from '@uniswap/universal-router-sdk';
 import { BigNumber } from 'ethers/lib/ethers';
 
 import {
   GasModelProviderConfig,
   SwapOptions,
   SwapRoute,
-  SwapType
+  SwapType,
 } from '../routers';
 import { Erc20__factory } from '../types/other/factories/Erc20__factory';
 import { Permit2__factory } from '../types/other/factories/Permit2__factory';
@@ -79,7 +79,12 @@ export abstract class Simulator {
         'User has sufficient balance to simulate. Simulating transaction.'
       );
       try {
-        return this.simulateTransaction(fromAddress, swapOptions, swapRoute, providerConfig);
+        return this.simulateTransaction(
+          fromAddress,
+          swapOptions,
+          swapRoute,
+          providerConfig
+        );
       } catch (e) {
         log.error({ e }, 'Error simulating transaction');
         return {

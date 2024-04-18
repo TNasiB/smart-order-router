@@ -1,7 +1,7 @@
-import { partitionMixedRouteByProtocol } from '@uniswap/router-sdk';
-import { Currency, CurrencyAmount, Ether } from '@uniswap/sdk-core';
-import { Pair } from '@uniswap/v2-sdk';
-import { Pool } from '@uniswap/v3-sdk';
+import { partitionMixedRouteByProtocol } from '@atleta-chain/router-sdk';
+import { Currency, CurrencyAmount, Ether } from '@atleta-chain/sdk-core';
+import { Pair } from '@atleta-chain/v2-sdk';
+import { Pool } from '@atleta-chain/v3-sdk';
 import { BigNumber } from 'ethers';
 import _ from 'lodash';
 import {
@@ -32,11 +32,11 @@ import {
   WETH_DAI,
 } from '../../../../test-util/mock-data';
 import { getMixedRouteWithValidQuoteStub } from '../../../providers/caching/route/test-util/mocked-dependencies';
+import { getPools } from './test-util/helpers';
 import {
   getMockedV2PoolProvider,
   getMockedV3PoolProvider,
 } from './test-util/mocked-dependencies';
-import { getPools } from './test-util/helpers';
 
 describe('mixed route gas model tests', () => {
   const gasPriceWei = BigNumber.from(1000000000);

@@ -1,6 +1,6 @@
-import { Protocol } from '@uniswap/router-sdk';
-import { Token } from '@uniswap/sdk-core';
-import { Pool } from '@uniswap/v3-sdk';
+import { Protocol } from '@atleta-chain/router-sdk';
+import { Token } from '@atleta-chain/sdk-core';
+import { Pool } from '@atleta-chain/v3-sdk';
 
 import { MixedRoute, V2Route, V3Route } from '../../../../routers';
 

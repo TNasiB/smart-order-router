@@ -1,8 +1,8 @@
+import { partitionMixedRouteByProtocol } from '@atleta-chain/router-sdk';
+import { ChainId } from '@atleta-chain/sdk-core';
+import { Pair } from '@atleta-chain/v2-sdk';
+import { Pool } from '@atleta-chain/v3-sdk';
 import { BigNumber } from '@ethersproject/bignumber';
-import { partitionMixedRouteByProtocol } from '@uniswap/router-sdk';
-import { ChainId } from '@uniswap/sdk-core';
-import { Pair } from '@uniswap/v2-sdk';
-import { Pool } from '@uniswap/v3-sdk';
 import JSBI from 'jsbi';
 import _ from 'lodash';
 

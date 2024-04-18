@@ -1,5 +1,5 @@
-import { Protocol } from '@uniswap/router-sdk';
-import { ChainId, Token, TradeType } from '@uniswap/sdk-core';
+import { Protocol } from '@atleta-chain/router-sdk';
+import { ChainId, Token, TradeType } from '@atleta-chain/sdk-core';
 import _ from 'lodash';
 
 import {

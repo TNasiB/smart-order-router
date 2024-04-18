@@ -1,6 +1,6 @@
+import { ChainId, Token } from '@atleta-chain/sdk-core';
+import { Pair } from '@atleta-chain/v2-sdk';
 import { BigNumber } from '@ethersproject/bignumber';
-import { ChainId, Token } from '@uniswap/sdk-core';
-import { Pair } from '@uniswap/v2-sdk';
 import retry, { Options as RetryOptions } from 'async-retry';
 import _ from 'lodash';
 

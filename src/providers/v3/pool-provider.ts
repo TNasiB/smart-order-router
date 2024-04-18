@@ -1,6 +1,6 @@
+import { ChainId, Token } from '@atleta-chain/sdk-core';
+import { computePoolAddress, FeeAmount, Pool } from '@atleta-chain/v3-sdk';
 import { BigNumber } from '@ethersproject/bignumber';
-import { ChainId, Token } from '@uniswap/sdk-core';
-import { computePoolAddress, FeeAmount, Pool } from '@uniswap/v3-sdk';
 import retry, { Options as RetryOptions } from 'async-retry';
 import _ from 'lodash';
 

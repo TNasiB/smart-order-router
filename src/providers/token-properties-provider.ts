@@ -1,5 +1,5 @@
+import { ChainId, Token } from '@atleta-chain/sdk-core';
 import { BigNumber } from '@ethersproject/bignumber';
-import { ChainId, Token } from '@uniswap/sdk-core';
 
 import { log, metric, MetricLoggerUnit } from '../util';
 

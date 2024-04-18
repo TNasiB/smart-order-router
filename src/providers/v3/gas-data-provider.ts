@@ -1,6 +1,6 @@
+import { ChainId } from '@atleta-chain/sdk-core';
 import { BigNumber } from '@ethersproject/bignumber';
 import { BaseProvider } from '@ethersproject/providers';
-import { ChainId } from '@uniswap/sdk-core';
 
 import { GasDataArbitrum__factory } from '../../types/other/factories/GasDataArbitrum__factory';
 import { ARB_GASINFO_ADDRESS } from '../../util';

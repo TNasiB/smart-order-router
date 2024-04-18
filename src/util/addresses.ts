@@ -1,5 +1,10 @@
-import { CHAIN_TO_ADDRESSES_MAP, ChainId, SWAP_ROUTER_02_ADDRESSES as SWAP_ROUTER_02_ADDRESSES_HELPER, Token } from '@uniswap/sdk-core';
-import { FACTORY_ADDRESS } from '@uniswap/v3-sdk';
+import {
+  ChainId,
+  CHAIN_TO_ADDRESSES_MAP,
+  SWAP_ROUTER_02_ADDRESSES as SWAP_ROUTER_02_ADDRESSES_HELPER,
+  Token,
+} from '@atleta-chain/sdk-core';
+import { FACTORY_ADDRESS } from '@atleta-chain/v3-sdk';
 
 import { NETWORKS_WITH_SAME_UNISWAP_ADDRESSES } from './chains';
 
@@ -64,7 +69,7 @@ export const NEW_QUOTER_V2_ADDRESSES: AddressMap = {
   ...constructSameAddressMap('0x61fFE014bA17989E743c5F6cB21bF9697530B21e'),
   [ChainId.POLYGON_MUMBAI]: '0x60e06b92bC94a665036C26feC5FF2A92E2d04c5f',
   [ChainId.SEPOLIA]: '0x6650ab818c0a7efa72fc1404a878fef1fec8e058',
-  [ChainId.MAINNET]: '0x5e55C9e631FAE526cd4B0526C4818D6e0a9eF0e3'
+  [ChainId.MAINNET]: '0x5e55C9e631FAE526cd4B0526C4818D6e0a9eF0e3',
 };
 
 export const MIXED_ROUTE_QUOTER_V1_ADDRESSES: AddressMap = {
@@ -98,8 +103,11 @@ export const UNISWAP_MULTICALL_ADDRESSES: AddressMap = {
   // TODO: Gnosis + Moonbeam contracts to be deployed
 };
 
-export const SWAP_ROUTER_02_ADDRESSES= (chainId: number): string => {
-  return SWAP_ROUTER_02_ADDRESSES_HELPER(chainId) ?? '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45';
+export const SWAP_ROUTER_02_ADDRESSES = (chainId: number): string => {
+  return (
+    SWAP_ROUTER_02_ADDRESSES_HELPER(chainId) ??
+    '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45'
+  );
 };
 
 export const OVM_GASPRICE_ADDRESS =
@@ -229,7 +237,7 @@ export const WETH9: {
     18,
     'WETH',
     'Wrapped Ether'
-  )
+  ),
 };
 
 export const BEACON_CHAIN_DEPOSIT_ADDRESS =

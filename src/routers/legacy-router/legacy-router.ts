@@ -1,8 +1,8 @@
+import { SwapRouter, Trade } from '@atleta-chain/router-sdk';
+import { ChainId, Currency, Token, TradeType } from '@atleta-chain/sdk-core';
+import { FeeAmount, MethodParameters, Pool, Route } from '@atleta-chain/v3-sdk';
 import { BigNumber } from '@ethersproject/bignumber';
 import { Logger } from '@ethersproject/logger';
-import { SwapRouter, Trade } from '@uniswap/router-sdk';
-import { ChainId, Currency, Token, TradeType } from '@uniswap/sdk-core';
-import { FeeAmount, MethodParameters, Pool, Route } from '@uniswap/v3-sdk';
 import _ from 'lodash';
 
 import { IOnChainQuoteProvider, RouteWithQuotes } from '../../providers';

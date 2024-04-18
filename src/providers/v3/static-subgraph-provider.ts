@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { ChainId, Token } from '@uniswap/sdk-core';
-import { FeeAmount, Pool } from '@uniswap/v3-sdk';
+import { ChainId, Token } from '@atleta-chain/sdk-core';
+import { FeeAmount, Pool } from '@atleta-chain/v3-sdk';
 import JSBI from 'jsbi';
 import _ from 'lodash';
 
@@ -61,7 +61,7 @@ import {
   WETH_POLYGON,
   WMATIC_POLYGON,
   WMATIC_POLYGON_MUMBAI,
-  WXDAI_GNOSIS
+  WXDAI_GNOSIS,
 } from '../token-provider';
 
 import { IV3PoolProvider } from './pool-provider';
