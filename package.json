@@ -1,6 +1,6 @@
 {
   "name": "@atleta-chain/smart-order-router",
-  "version": "3.27.3",
+  "version": "3.27.4",
   "description": "Uniswap Smart Order Router",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -46,7 +46,6 @@
     "async-retry": "^1.3.1",
     "await-timeout": "^1.1.1",
     "axios": "^0.21.1",
-    "brotli": "^1.3.3",
     "bunyan": "^1.8.15",
     "bunyan-blackhole": "^1.1.1",
     "ethers": "^5.7.2",
@@ -55,6 +54,7 @@
     "lodash": "^4.17.21",
     "mnemonist": "^0.38.3",
     "node-cache": "^5.1.2",
+    "pako": "^2.1.0",
     "stats-lite": "^2.2.0"
   },
   "devDependencies": {
@@ -76,6 +76,7 @@
     "@types/jest-sinon": "^1.0.2",
     "@types/lodash": "^4.14.168",
     "@types/node": "^15.0.2",
+    "@types/pako": "^2.0.3",
     "@types/sinon": "^10.0.2",
     "@types/stats-lite": "^2.2.0",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
