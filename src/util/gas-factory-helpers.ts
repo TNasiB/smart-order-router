@@ -2,9 +2,9 @@ import { Protocol } from '@atleta-chain/router-sdk';
 import { ChainId, Percent, Token, TradeType } from '@atleta-chain/sdk-core';
 import { FeeAmount, Pool } from '@atleta-chain/v3-sdk';
 import { BigNumber } from '@ethersproject/bignumber';
+import brotli from 'brotli';
 import JSBI from 'jsbi';
 import _ from 'lodash';
-import pako from 'pako';
 
 import { IV2PoolProvider } from '../providers';
 import { IPortionProvider } from '../providers/portion-provider';
@@ -190,15 +190,19 @@ export function getGasCostInNativeCurrency(
 
 export function getArbitrumBytes(data: string): BigNumber {
   if (data == '') return BigNumber.from(0);
-
-  // Подготовка данных для сжатия
-  const buffer = Buffer.from(data.replace('0x', ''), 'hex');
-
-  // Сжатие данных с использованием pako
-  const compressed = pako.deflate(buffer, { level: 1 }); // Уровень сжатия 1 для быстрого сжатия
-
-  // Возврат оценки сжатого размера с учетом поправки
-  // Умножаем длину сжатого массива на 1.2 (или увеличиваем размер на 20%)
+  const compressed = brotli.compress(
+    Buffer.from(data.replace('0x', ''), 'hex'),
+    {
+      mode: 0,
+      quality: 1,
+      lgwin: 22,
+    }
+  );
+  // TODO: This is a rough estimate of the compressed size
+  // Brotli 0 should be used, but this brotli library doesn't support it
+  // https://github.com/foliojs/brotli.js/issues/38
+  // There are other brotli libraries that do support it, but require async
+  // We workaround by using Brotli 1 with a 20% bump in size
   return BigNumber.from(compressed.length).mul(120).div(100);
 }
 
