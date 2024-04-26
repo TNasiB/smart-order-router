@@ -136,7 +136,7 @@ Total ticks crossed: 7
 ## Sepolia
 
 ```
-./bin/cli quote --tokenIn 0x7AF17A48a6336F7dc1beF9D485139f7B6f4FB5C8 --tokenOut 0x6f14C02Fc1F78322cFd7d707aB90f18baD3B54f5 --amount 10 --exactIn --minSplits 1 --router alpha --chainId 11155111
+./bin/cli quote --tokenIn 0xD340Ee0c35cd6B891B1b9A9437fFFd8F370CB0cF --tokenOut 0x5ED77c45BE0D8ceD9C729130bf9ce546fb2594f5 --amount 10 --exactIn --minSplits 1 --router alpha --chainId 11155111 --debug
 ```
 
 ## Kovan
@@ -161,7 +161,6 @@ Total ticks crossed: 7
 ```
 ./bin/cli quote --tokenIn 0x7F5c764cBc14f9669B88837ca1490cCa17c31607 --tokenOut 0x4200000000000000000000000000000000000042 --amount 1 --exactIn --minSplits 1 --protocols v2 --router alpha --chainId 10
 ```
-
 
 ## Optimism-Goerli
 
@@ -228,7 +227,6 @@ Total ticks crossed: 7
 ```
 ./bin/cli quote --tokenIn 0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA --tokenOut 0x4200000000000000000000000000000000000006 --amount 10 --exactIn --minSplits 1 --protocols v3 --router alpha --chainId 8453
 ```
-
 
 ## Adding a new Chain
 

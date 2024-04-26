@@ -105,7 +105,7 @@ export const USDC_SEPOLIA = new Token(
 );
 export const DAI_SEPOLIA = new Token(
   ChainId.SEPOLIA,
-  '0x7AF17A48a6336F7dc1beF9D485139f7B6f4FB5C8',
+  '0xB4090933A1E84401eef6819B153Dff1B732E070A',
   18,
   'DAI',
   'DAI Token'
