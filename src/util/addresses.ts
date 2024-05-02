@@ -68,7 +68,7 @@ export const QUOTER_V2_ADDRESSES: AddressMap = {
 export const NEW_QUOTER_V2_ADDRESSES: AddressMap = {
   ...constructSameAddressMap('0x61fFE014bA17989E743c5F6cB21bF9697530B21e'),
   [ChainId.POLYGON_MUMBAI]: '0x60e06b92bC94a665036C26feC5FF2A92E2d04c5f',
-  [ChainId.SEPOLIA]: '0x91Be3809F45CB607d83cF7562BC05558BDC57e73',
+  [ChainId.SEPOLIA]: '0x8a58Ba91530335D2f3A2A9dDDFb00DD4D1b7DB49',
   [ChainId.MAINNET]: '0x5e55C9e631FAE526cd4B0526C4818D6e0a9eF0e3',
 };
 
@@ -106,7 +106,7 @@ export const UNISWAP_MULTICALL_ADDRESSES: AddressMap = {
 export const SWAP_ROUTER_02_ADDRESSES = (chainId: number): string => {
   return (
     SWAP_ROUTER_02_ADDRESSES_HELPER(chainId) ??
-    '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45'
+    '0xabA86e02f7a8ecE308ac962e16D4928072A7773d'
   );
 };
 
@@ -119,7 +119,7 @@ export const NONFUNGIBLE_POSITION_MANAGER_ADDRESS =
   CHAIN_TO_ADDRESSES_MAP[ChainId.MAINNET].nonfungiblePositionManagerAddress;
 export const V3_MIGRATOR_ADDRESS =
   CHAIN_TO_ADDRESSES_MAP[ChainId.MAINNET].v3MigratorAddress;
-export const MULTICALL2_ADDRESS = '0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696';
+export const MULTICALL2_ADDRESS = '0x0490d65E42388DF4E388d5E801Ba59f463eAE98E';
 
 export type AddressMap = { [chainId: number]: string | undefined };
 
@@ -170,7 +170,7 @@ export const WETH9: {
   ),
   [ChainId.SEPOLIA]: new Token(
     ChainId.SEPOLIA,
-    '0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14',
+    '0xE67ABDA0D43f7AC8f37876bBF00D1DFadbB93aaa',
     18,
     'WETH',
     'Wrapped Ether'

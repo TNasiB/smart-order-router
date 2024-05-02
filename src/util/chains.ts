@@ -344,7 +344,7 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
   ),
   [ChainId.SEPOLIA]: new Token(
     11155111,
-    '0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14',
+    '0xE67ABDA0D43f7AC8f37876bBF00D1DFadbB93aaa',
     18,
     'WETH',
     'Wrapped Ether'
