@@ -1439,6 +1439,8 @@ export class AlphaRouter
 
     // If user provided recipient, deadline etc. we also generate the calldata required to execute
     // the swap and return it too.
+
+    console.log({ swapConfig });
     if (swapConfig) {
       methodParameters = buildSwapMethodParameters(
         trade,
@@ -1446,6 +1448,9 @@ export class AlphaRouter
         this.chainId
       );
     }
+
+    console.log('asdasdasd');
+    console.table(methodParameters);
 
     const tokenOutAmount =
       tradeType === TradeType.EXACT_OUTPUT
@@ -1497,6 +1502,9 @@ export class AlphaRouter
       portionAmount: portionAmount,
       quoteGasAndPortionAdjusted: quoteGasAndPortionAdjusted,
     };
+
+    console.log('asdasdassd');
+    console.table(swapRoute.methodParameters);
 
     if (
       swapConfig &&
