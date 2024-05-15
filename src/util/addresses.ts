@@ -106,7 +106,7 @@ export const UNISWAP_MULTICALL_ADDRESSES: AddressMap = {
 export const SWAP_ROUTER_02_ADDRESSES = (chainId: number): string => {
   return (
     SWAP_ROUTER_02_ADDRESSES_HELPER(chainId) ??
-    '0xabA86e02f7a8ecE308ac962e16D4928072A7773d'
+    '0xE227f11892BBe546A6DC05Ab6FaF3406b20a81d8'
   );
 };
 
