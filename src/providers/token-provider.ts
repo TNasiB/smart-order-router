@@ -98,14 +98,14 @@ export const LIDO_MAINNET = new Token(
 
 export const USDC_SEPOLIA = new Token(
   ChainId.SEPOLIA,
-  '0x7169d38820dfd117c3fa1f22a697dba58d90ba06',
-  6,
+  '0xE27C2bB63411C4DA7d49dFB41884DC4BcD153dbf',
+  18,
   'USDC',
   'USDC Token'
 );
 export const DAI_SEPOLIA = new Token(
   ChainId.SEPOLIA,
-  '0xB4090933A1E84401eef6819B153Dff1B732E070A',
+  '0x096435c06D354BAB973503C090F27AbF47e9BC14',
   18,
   'DAI',
   'DAI Token'
