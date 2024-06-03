@@ -98,7 +98,7 @@ export const LIDO_MAINNET = new Token(
 
 export const USDC_SEPOLIA = new Token(
   ChainId.SEPOLIA,
-  '0x59d97E3c40786Be4020AfDA69b91aea1271F36Ac',
+  '0xcFcD20aE75876EF87d75978cCe070646C555f711',
   18,
   'USDC',
   'USDC Token'
