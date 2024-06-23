@@ -160,6 +160,7 @@ export const WETH9: {
     | ChainId.ROOTSTOCK
     | ChainId.ZORA
     | ChainId.ZORA_SEPOLIA
+    | ChainId.ATLETA_OLYMPIA
   >]: Token;
 } = {
   [ChainId.MAINNET]: new Token(
@@ -246,13 +247,13 @@ export const WETH9: {
     'WETH',
     'Wrapped Ether'
   ),
-  [ChainId.ATLETA_OLYMPIA]: new Token(
-    ChainId.ATLETA_OLYMPIA,
-    '0xe26fea44C00802b9cAe594974c0a6CBCAd5fd863',
-    18,
-    'ATLA',
-    'Wrapped ATLA'
-  ),
+  // [ChainId.ATLETA_OLYMPIA]: new Token(
+  //   ChainId.ATLETA_OLYMPIA,
+  //   '0xe26fea44C00802b9cAe594974c0a6CBCAd5fd863',
+  //   18,
+  //   'ATLA',
+  //   'Wrapped ATLA'
+  // ),
 };
 
 export const BEACON_CHAIN_DEPOSIT_ADDRESS =
