@@ -101,6 +101,8 @@ export const ID_TO_CHAIN_ID = (id: number): ChainId => {
       return ChainId.BASE_GOERLI;
     case 81457:
       return ChainId.BLAST;
+    case 2340:
+      return ChainId.ATLETA_OLYMPIA;
     default:
       throw new Error(`Unknown chain id: ${id}`);
   }
@@ -127,6 +129,7 @@ export enum ChainName {
   BASE = 'base-mainnet',
   BASE_GOERLI = 'base-goerli',
   BLAST = 'blast-mainnet',
+  ATLETA_OLYMPIA = 'atleta-olympia',
 }
 
 export enum NativeCurrencyName {
@@ -154,6 +157,11 @@ export const NATIVE_NAMES_BY_ID: { [chainId: number]: string[] } = {
   [ChainId.SEPOLIA]: [
     'ETH',
     'ETHER',
+    '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+  ],
+  [ChainId.ATLETA_OLYMPIA]: [
+    'ATLA',
+    'ATLA',
     '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
   ],
   [ChainId.OPTIMISM]: [
@@ -277,6 +285,8 @@ export const ID_TO_NETWORK_NAME = (id: number): ChainName => {
       return ChainName.BASE_GOERLI;
     case 81457:
       return ChainName.BLAST;
+    case 2340:
+      return ChainName.ATLETA_OLYMPIA;
     default:
       throw new Error(`Unknown chain id: ${id}`);
   }
@@ -322,6 +332,8 @@ export const ID_TO_PROVIDER = (id: ChainId): string => {
       return process.env.JSON_RPC_PROVIDER_BASE!;
     case ChainId.BLAST:
       return process.env.JSON_RPC_PROVIDER_BLAST!;
+    case ChainId.ATLETA_OLYMPIA:
+      return process.env.JSON_RPC_PROVIDER_ATLETA_OLYMPIA!;
     default:
       throw new Error(`Chain id: ${id} not supported`);
   }

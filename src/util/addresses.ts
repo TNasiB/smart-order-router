@@ -39,6 +39,8 @@ export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
     CHAIN_TO_ADDRESSES_MAP[ChainId.BASE_GOERLI].v3CoreFactoryAddress,
   [ChainId.BASE]: CHAIN_TO_ADDRESSES_MAP[ChainId.BASE].v3CoreFactoryAddress,
   [ChainId.BLAST]: CHAIN_TO_ADDRESSES_MAP[ChainId.BLAST].v3CoreFactoryAddress,
+  [ChainId.ATLETA_OLYMPIA]:
+    CHAIN_TO_ADDRESSES_MAP[ChainId.ATLETA_OLYMPIA].v3CoreFactoryAddress,
   // TODO: Gnosis + Moonbeam contracts to be deployed
 };
 
@@ -62,6 +64,8 @@ export const QUOTER_V2_ADDRESSES: AddressMap = {
     CHAIN_TO_ADDRESSES_MAP[ChainId.BASE_GOERLI].quoterAddress,
   [ChainId.BASE]: CHAIN_TO_ADDRESSES_MAP[ChainId.BASE].quoterAddress,
   [ChainId.BLAST]: CHAIN_TO_ADDRESSES_MAP[ChainId.BLAST].quoterAddress,
+  [ChainId.ATLETA_OLYMPIA]:
+    CHAIN_TO_ADDRESSES_MAP[ChainId.ATLETA_OLYMPIA].quoterAddress,
   // TODO: Gnosis + Moonbeam contracts to be deployed
 };
 
@@ -70,6 +74,8 @@ export const NEW_QUOTER_V2_ADDRESSES: AddressMap = {
   [ChainId.POLYGON_MUMBAI]: '0x60e06b92bC94a665036C26feC5FF2A92E2d04c5f',
   [ChainId.SEPOLIA]: '0x8a58Ba91530335D2f3A2A9dDDFb00DD4D1b7DB49',
   [ChainId.MAINNET]: '0x5e55C9e631FAE526cd4B0526C4818D6e0a9eF0e3',
+  [ChainId.ATLETA_OLYMPIA]:
+    CHAIN_TO_ADDRESSES_MAP[ChainId.ATLETA_OLYMPIA].quoterAddress,
 };
 
 export const MIXED_ROUTE_QUOTER_V1_ADDRESSES: AddressMap = {
@@ -89,6 +95,8 @@ export const UNISWAP_MULTICALL_ADDRESSES: AddressMap = {
   [ChainId.OPTIMISM_SEPOLIA]:
     CHAIN_TO_ADDRESSES_MAP[ChainId.OPTIMISM_SEPOLIA].multicallAddress,
   [ChainId.SEPOLIA]: CHAIN_TO_ADDRESSES_MAP[ChainId.SEPOLIA].multicallAddress,
+  [ChainId.ATLETA_OLYMPIA]:
+    CHAIN_TO_ADDRESSES_MAP[ChainId.ATLETA_OLYMPIA].multicallAddress,
   [ChainId.ARBITRUM_GOERLI]:
     CHAIN_TO_ADDRESSES_MAP[ChainId.ARBITRUM_GOERLI].multicallAddress,
   [ChainId.ARBITRUM_SEPOLIA]:
