@@ -491,6 +491,13 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
     'WETH',
     'Wrapped Ether'
   ),
+  [ChainId.ATLETA_OLYMPIA]: new Token(
+    ChainId.ATLETA_OLYMPIA,
+    '0xe26fea44C00802b9cAe594974c0a6CBCAd5fd863',
+    18,
+    'WATLA',
+    'Wrapped ATLA'
+  ),
 };
 
 function isMatic(

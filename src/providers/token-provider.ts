@@ -110,6 +110,20 @@ export const DAI_SEPOLIA = new Token(
   'DAI',
   'DAI Token'
 );
+export const USDC_ATLETA_OLYMPIA = new Token(
+  ChainId.SEPOLIA,
+  '0x9f294c5D5dA451E1Fa5c2a654cb6d6e394eFE2Cd',
+  18,
+  'USDC',
+  'USDC Token'
+);
+export const DAI_ATLETA_OLYMPIA = new Token(
+  ChainId.SEPOLIA,
+  '0x22C9955B75C50b5E0Ad73De68F51B9eFb462a9a9',
+  18,
+  'DAI',
+  'DAI Token'
+);
 export const USDC_GOERLI = new Token(
   ChainId.GOERLI,
   '0x07865c6e87b9f70255377e024ace6630c1eaa37f',

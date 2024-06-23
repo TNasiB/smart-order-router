@@ -49,6 +49,7 @@ type ChainTokenList = {
 };
 
 const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
+  [ChainId.ATLETA_OLYMPIA]: [WRAPPED_NATIVE_CURRENCY[ChainId.ATLETA_OLYMPIA]!],
   [ChainId.MAINNET]: [
     WRAPPED_NATIVE_CURRENCY[ChainId.MAINNET]!,
     DAI_MAINNET,
