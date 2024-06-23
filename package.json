@@ -1,6 +1,6 @@
 {
   "name": "@atleta-chain/smart-order-router",
-  "version": "3.27.29",
+  "version": "3.27.30",
   "description": "Uniswap Smart Order Router",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",

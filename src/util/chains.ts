@@ -664,6 +664,32 @@ class AvalancheNativeCurrency extends NativeCurrency {
   }
 }
 
+function isAtleta(
+  chainId: number
+): chainId is ChainId.POLYGON | ChainId.POLYGON_MUMBAI {
+  return chainId === ChainId.POLYGON_MUMBAI || chainId === ChainId.POLYGON;
+}
+
+class AtletaNativeCurrency extends NativeCurrency {
+  equals(other: Currency): boolean {
+    return other.isNative && other.chainId === this.chainId;
+  }
+
+  get wrapped(): Token {
+    if (!isAtleta(this.chainId)) throw new Error('Not atleta');
+    const nativeCurrency = WRAPPED_NATIVE_CURRENCY[this.chainId];
+    if (nativeCurrency) {
+      return nativeCurrency;
+    }
+    throw new Error(`Does not support this chain ${this.chainId}`);
+  }
+
+  public constructor(chainId: number) {
+    if (!isAtleta(chainId)) throw new Error('Not atleta');
+    super(chainId, 18, 'ATLA', 'ATLETA OLYMPIA');
+  }
+}
+
 export class ExtendedEther extends Ether {
   public get wrapped(): Token {
     if (this.chainId in WRAPPED_NATIVE_CURRENCY) {
@@ -701,6 +727,8 @@ export function nativeOnChain(chainId: number): NativeCurrency {
     cachedNativeCurrency[chainId] = new BnbNativeCurrency(chainId);
   } else if (isAvax(chainId)) {
     cachedNativeCurrency[chainId] = new AvalancheNativeCurrency(chainId);
+  } else if (isAtleta(chainId)) {
+    cachedNativeCurrency[chainId] = new AtletaNativeCurrency(chainId);
   } else {
     cachedNativeCurrency[chainId] = ExtendedEther.onChain(chainId);
   }
