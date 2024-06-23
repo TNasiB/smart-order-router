@@ -13,7 +13,7 @@ export const BNB_TICK_LENS_ADDRESS =
 export const BNB_NONFUNGIBLE_POSITION_MANAGER_ADDRESS =
   CHAIN_TO_ADDRESSES_MAP[ChainId.BNB].nonfungiblePositionManagerAddress;
 export const BNB_SWAP_ROUTER_02_ADDRESS =
-  CHAIN_TO_ADDRESSES_MAP[ChainId.BNB].swapRouter02Address!;
+  CHAIN_TO_ADDRESSES_MAP[ChainId.BNB].swapRouter02Address;
 export const BNB_V3_MIGRATOR_ADDRESS =
   CHAIN_TO_ADDRESSES_MAP[ChainId.BNB].v3MigratorAddress;
 
@@ -237,6 +237,13 @@ export const WETH9: {
     18,
     'WETH',
     'Wrapped Ether'
+  ),
+  [ChainId.ATLETA_OLYMPIA]: new Token(
+    ChainId.ATLETA_OLYMPIA,
+    '0xe26fea44C00802b9cAe594974c0a6CBCAd5fd863',
+    18,
+    'ATLA',
+    'Wrapped ATLA'
   ),
 };
 

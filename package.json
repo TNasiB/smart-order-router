@@ -34,7 +34,7 @@
     "@atleta-chain/default-token-list": "^11.18.0",
     "@atleta-chain/permit2-sdk": "^1.2.0",
     "@atleta-chain/router-sdk": "^1.9.3",
-    "@atleta-chain/sdk-core": "^4.2.8",
+    "@atleta-chain/sdk-core": "^4.2.10",
     "@atleta-chain/swap-router-contracts": "^1.3.3",
     "@atleta-chain/token-lists": "^1.0.0-beta.34",
     "@atleta-chain/universal-router": "^1.6.2",

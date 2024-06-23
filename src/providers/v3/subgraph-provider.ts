@@ -71,6 +71,8 @@ const SUBGRAPH_URL_BY_CHAIN: { [chainId in ChainId]?: string } = {
     'https://gateway-arbitrum.network.thegraph.com/api/0ae45f0bf40ae2e73119b44ccd755967/subgraphs/id/2LHovKznvo8YmKC9ZprPjsYAZDCc4K5q4AYz8s3cnQn1',
   [ChainId.SEPOLIA]:
     'https://api.studio.thegraph.com/query/67019/uniswap-fork/version/latest',
+  [ChainId.ATLETA_OLYMPIA]:
+    'http://147.182.136.74:8000/subgraphs/name/ianlapham/uniswap-v3',
 };
 
 const PAGE_SIZE = 1000; // 1k is max possible query size from subgraph.
