@@ -18,6 +18,7 @@ export const SUPPORTED_CHAINS: ChainId[] = [
   ChainId.POLYGON,
   ChainId.POLYGON_MUMBAI,
   ChainId.SEPOLIA,
+  ChainId.ATLETA_OLYMPIA,
   ChainId.CELO_ALFAJORES,
   ChainId.CELO,
   ChainId.BNB,
@@ -30,6 +31,7 @@ export const SUPPORTED_CHAINS: ChainId[] = [
 export const V2_SUPPORTED = [
   ChainId.MAINNET,
   ChainId.SEPOLIA,
+  ChainId.ATLETA_OLYMPIA,
   ChainId.ARBITRUM_ONE,
   ChainId.OPTIMISM,
   ChainId.POLYGON,
@@ -141,6 +143,7 @@ export enum NativeCurrencyName {
   MOONBEAM = 'GLMR',
   BNB = 'BNB',
   AVALANCHE = 'AVAX',
+  ATLETA_OLYMPIA = 'ATLA',
 }
 
 export const NATIVE_NAMES_BY_ID: { [chainId: number]: string[] } = {
@@ -225,6 +228,7 @@ export const NATIVE_CURRENCY: { [chainId: number]: NativeCurrencyName } = {
   [ChainId.MAINNET]: NativeCurrencyName.ETHER,
   [ChainId.GOERLI]: NativeCurrencyName.ETHER,
   [ChainId.SEPOLIA]: NativeCurrencyName.ETHER,
+  [ChainId.ATLETA_OLYMPIA]: NativeCurrencyName.ATLETA_OLYMPIA,
   [ChainId.OPTIMISM]: NativeCurrencyName.ETHER,
   [ChainId.OPTIMISM_GOERLI]: NativeCurrencyName.ETHER,
   [ChainId.OPTIMISM_SEPOLIA]: NativeCurrencyName.ETHER,
