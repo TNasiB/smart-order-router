@@ -666,8 +666,8 @@ class AvalancheNativeCurrency extends NativeCurrency {
 
 function isAtleta(
   chainId: number
-): chainId is ChainId.POLYGON | ChainId.POLYGON_MUMBAI {
-  return chainId === ChainId.POLYGON_MUMBAI || chainId === ChainId.POLYGON;
+): chainId is ChainId.ATLETA_OLYMPIA | ChainId.ATLETA_OLYMPIA {
+  return chainId === ChainId.ATLETA_OLYMPIA;
 }
 
 class AtletaNativeCurrency extends NativeCurrency {
@@ -728,6 +728,7 @@ export function nativeOnChain(chainId: number): NativeCurrency {
   } else if (isAvax(chainId)) {
     cachedNativeCurrency[chainId] = new AvalancheNativeCurrency(chainId);
   } else if (isAtleta(chainId)) {
+    console.log({ chainId }, 'nativeOnChain');
     cachedNativeCurrency[chainId] = new AtletaNativeCurrency(chainId);
   } else {
     cachedNativeCurrency[chainId] = ExtendedEther.onChain(chainId);

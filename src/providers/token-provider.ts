@@ -111,14 +111,14 @@ export const DAI_SEPOLIA = new Token(
   'DAI Token'
 );
 export const USDC_ATLETA_OLYMPIA = new Token(
-  ChainId.SEPOLIA,
+  ChainId.ATLETA_OLYMPIA,
   '0x9f294c5D5dA451E1Fa5c2a654cb6d6e394eFE2Cd',
   18,
   'USDC',
   'USDC Token'
 );
 export const DAI_ATLETA_OLYMPIA = new Token(
-  ChainId.SEPOLIA,
+  ChainId.ATLETA_OLYMPIA,
   '0x22C9955B75C50b5E0Ad73De68F51B9eFb462a9a9',
   18,
   'DAI',
