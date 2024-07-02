@@ -140,6 +140,10 @@ export class V2PoolProvider implements IV2PoolProvider {
       ),
     ]);
 
+    console.table({ reservesResults });
+    console.table({ tokenPropertiesMap });
+    console.table({ poolAddressSet });
+
     log.info(
       `Got reserves for ${poolAddressSet.size} pools ${
         providerConfig?.blockNumber

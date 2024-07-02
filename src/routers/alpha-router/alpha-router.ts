@@ -696,6 +696,8 @@ export class AlphaRouter
         new NodeJSCache(new NodeCache({ stdTTL: 60, useClones: false }))
       );
 
+    console.log(this.v2PoolProvider, 'provider');
+
     this.v2QuoteProvider = v2QuoteProvider ?? new V2QuoteProvider();
 
     this.blockedTokenListProvider =
@@ -1440,7 +1442,6 @@ export class AlphaRouter
     // If user provided recipient, deadline etc. we also generate the calldata required to execute
     // the swap and return it too.
 
-    console.log({ swapConfig });
     if (swapConfig) {
       methodParameters = buildSwapMethodParameters(
         trade,
@@ -1448,9 +1449,6 @@ export class AlphaRouter
         this.chainId
       );
     }
-
-    console.log('asdasdasd');
-    console.table(methodParameters);
 
     const tokenOutAmount =
       tradeType === TradeType.EXACT_OUTPUT
@@ -1503,7 +1501,6 @@ export class AlphaRouter
       quoteGasAndPortionAdjusted: quoteGasAndPortionAdjusted,
     };
 
-    console.log('asdasdassd');
     console.table(swapRoute.methodParameters);
 
     if (

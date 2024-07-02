@@ -273,7 +273,9 @@ export class V2HeuristicGasModelFactory extends IV2GasModelFactory {
     ]);
 
     const poolAccessor = await poolProvider.getPools(usdPools, providerConfig);
+
     const poolsRaw = poolAccessor.getAllPools();
+
     const pools = _.filter(
       poolsRaw,
       (pool) =>

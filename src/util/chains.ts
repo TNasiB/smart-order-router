@@ -728,7 +728,6 @@ export function nativeOnChain(chainId: number): NativeCurrency {
   } else if (isAvax(chainId)) {
     cachedNativeCurrency[chainId] = new AvalancheNativeCurrency(chainId);
   } else if (isAtleta(chainId)) {
-    console.log({ chainId }, 'nativeOnChain');
     cachedNativeCurrency[chainId] = new AtletaNativeCurrency(chainId);
   } else {
     cachedNativeCurrency[chainId] = ExtendedEther.onChain(chainId);
