@@ -39,7 +39,7 @@ const SUBGRAPH_URL_BY_CHAIN: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]:
     'https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-v2-dev',
   [ChainId.ATLETA_OLYMPIA]:
-    'http://127.0.0.1:8000/subgraphs/name/davekaj/uniswap/graphql',
+    'http://147.182.160.126:8000/subgraphs/name/davekaj/uniswap/graphq',
 };
 
 const threshold = 0.025;
