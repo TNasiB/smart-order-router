@@ -696,8 +696,6 @@ export class AlphaRouter
         new NodeJSCache(new NodeCache({ stdTTL: 60, useClones: false }))
       );
 
-    console.log(this.v2PoolProvider, 'provider');
-
     this.v2QuoteProvider = v2QuoteProvider ?? new V2QuoteProvider();
 
     this.blockedTokenListProvider =
@@ -1500,8 +1498,6 @@ export class AlphaRouter
       portionAmount: portionAmount,
       quoteGasAndPortionAdjusted: quoteGasAndPortionAdjusted,
     };
-
-    console.table(swapRoute.methodParameters);
 
     if (
       swapConfig &&

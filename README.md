@@ -142,7 +142,7 @@ Total ticks crossed: 7
 
 ```
 
-./bin/cli quote --tokenIn 0x9f294c5D5dA451E1Fa5c2a654cb6d6e394eFE2Cd --tokenOut 0xe26fea44C00802b9cAe594974c0a6CBCAd5fd863 --amount 1 --exactIn --minSplits 1 --router alpha --chainId 2340 --debug
+./bin/cli quote --tokenIn 0xCDa75276918A66D609a55b04570d7b4015A974A0 --tokenOut 0xe26fea44C00802b9cAe594974c0a6CBCAd5fd863 --amount 1 --exactIn --minSplits 1 --router alpha --chainId 2340 --debug
 
 ```
 
